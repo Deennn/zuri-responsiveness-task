@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* overflow: hidden !important; */
+}
+
+:root {
+  --white: hsl(0, 0%, 100%);
+  --Pink: hsl(322, 100%, 66%);
+  --Very-Pale-Cyan: hsl(193, 100%, 96%);
+  --Very-Dark-Cyan: hsl(192, 100%, 9%);
+  --Grayish-Blue: hsl(208, 11%, 55%);
+}
+
+body {
+  /* font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif; */
+
+  font-size: 18px;
+}
+
+ul {
+  list-style: none;
+}
+li {
+  color: var(--white);
+  padding: 0.5rem;
+}
+
+img {
+  width: 100%;
+}
+
+h1,
+h2 {
+  font-family: "Poppins", sans-serif;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+}
+
+.hero {
+  height: 100%;
+  width: 100%;
+  background-color: var(--Very-Pale-Cyan);
+  margin-bottom: 10rem;
+}
+
+.hero .navbar {
+  padding: 3rem 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn {
+  border: none;
+  padding: 10px 40px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 16px;
+  background-color: var(--white);
+}
+
+.pink {
+  background-color: var(--Pink);
+  color: var(--white);
+}
+
+.hero-section {
+  padding: 3rem 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-section .hero-writeup {
+  width: 45%;
+  padding-right: 8rem;
+}
+
+.hero-section .hero-image {
+  width: 55%;
+}
+
+.hero-section .hero-writeup p {
+  padding: 2rem 0;
+}
+
+section {
+  height: 100%;
+  width: 100%;
+  background-color: var(--white);
+}
+
+.container {
+  width: 80%;
+  margin: 2rem auto;
+  background-color: var(--white);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container p {
+  color: var(--Grayish-Blue);
+  padding: 0.5rem 0;
+}
+
+.container .img {
+  width: 50%;
+  padding: 3rem;
+}
+
+.container .write {
+  width: 50%;
+  padding: 5rem;
+}
+
+.ready {
+  margin: 0 auto;
+  margin-top: -7rem;
+  width: 40%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  text-align: center;
+  padding: 3rem;
+  z-index: 10;
+  background-color: var(--white);
+}
+
+.ready h2 {
+  padding-bottom: 2rem;
+}
+
+footer {
+  height: 100%;
+  width: 100%;
+  background-color: var(--Very-Dark-Cyan);
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.bottom-text {
+  color: var(--white);
+
+  font-size: 10px;
+}
+
+footer .footer-container p {
+  /* line-height: 1.6; */
+  /* color: var(--white); */
+}
+
+.bottom-text {
+  text-align: right;
+  padding: 2rem;
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 5rem 0;
+}
+
+.footer-container img {
+  width: 15px;
+  color: black;
+  margin-right: 10px;
+}
+.footer-container .f1 > div {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.footer-container .f1 > div p {
+  color: var(--white);
+}
+
+.f4 i {
+  color: var(--white);
+}
+
+@media screen and (max-width: 700px) {
+  .hero .navbar {
+    padding: 3rem 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+  }
+
+  .hero .hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0rem 2rem;
+    margin-bottom: 10rem;
+  }
+
+  .container {
+    flex-direction: column;
+    width: 80%;
+  }
+
+  .container .img {
+    width: 100%;
+    padding: 3rem;
+  }
+
+  .container .write {
+    width: 100%;
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .hero-section .hero-writeup {
+    width: 100%;
+    padding-right: 2rem;
+    text-align: center;
+  }
+
+  .hero-section .hero-image {
+    margin-top: 1rem;
+    height: 2rem;
+    width: 100%;
+    margin-bottom: 5rem;
+  }
+
+  footer {
+    height: 100%;
+    width: 100%;
+    background-color: var(--Very-Dark-Cyan);
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 5rem 0;
+  }
+
+  .footer-container .f1 > div {
+    display: flex;
+    justify-content: flex-start;
+    margin: 20px;
+  }
+
+  .ready {
+    width: 80%;
+    border-radius: 20px;
+    padding: 1.5rem;
+  }
+}
